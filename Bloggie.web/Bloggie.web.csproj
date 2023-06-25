@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\NewFolder1\**" />
+    <Compile Remove="Models\NewFolder2\**" />
+    <Compile Remove="Models\NewFolder3\**" />
+    <Compile Remove="Models\NewFolder\**" />
+    <Compile Remove="Views\AdminTags\**" />
+    <Content Remove="Models\NewFolder1\**" />
+    <Content Remove="Models\NewFolder2\**" />
+    <Content Remove="Models\NewFolder3\**" />
+    <Content Remove="Models\NewFolder\**" />
+    <Content Remove="Views\AdminTags\**" />
+    <EmbeddedResource Remove="Models\NewFolder1\**" />
+    <EmbeddedResource Remove="Models\NewFolder2\**" />
+    <EmbeddedResource Remove="Models\NewFolder3\**" />
+    <EmbeddedResource Remove="Models\NewFolder\**" />
+    <EmbeddedResource Remove="Views\AdminTags\**" />
+	  <None Remove="Models\NewFolder1\**" />
+	  <None Remove="Models\NewFolder2\**" />
+	  <None Remove="Models\NewFolder3\**" />
+	  <None Remove="Models\NewFolder\**" />
+    <None Remove="Views\AdminTags\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\AdminTags\Add.cshtml" />
+    <None Include="Views\AdminTags\Edit.cshtml" />
+    <None Include="Views\AdminTags\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CloudinaryDotNet" Version="1.21.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
